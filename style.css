@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to bottom,rgba(1,1,1,.5),rgba(1,1,1,0.7)) ,url(images/banner.png); 
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 3% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    transition: .5s linear;
+   
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  .text-box{
+    color: #fff;
+    width:100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+  }
+  .text-box h1 {
+    font-size: 62px;
+    margin-bottom: 10px;
+  }
+
+  .hero-btn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    margin-top: 40px;
+    display: inline-block;
+    background:transparent;
+    transition: 0.8s;
+    border-radius: 10px;
+  }
+  .hero-btn:hover
+  {
+    background-color: #f44336;
+    border: 1px solid #f44336;
+  }
+  nav .fa{
+    display: none;
+  }
+  @media screen and (max-width:700px){
+    .text-box h1 {
+        font-size: 17px;
+      }
+      .text-box{
+      
+        padding: 0px 30px;
+      }
+      .nav-links ul li {
+        display: block;
+      }
+      .nav-links ul li a{
+        padding-left: 20px;
+      }
+      .nav-links{
+        background-color: #f44336;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        width: 200px;
+        transition: .7s;
+        display: none;
+
+      }
+      nav .fa{
+        display: block;
+        font-size: 22;
+        margin: 10px;
+        color: #fff;
+        cursor: pointer;
+
+      }
+  }
+
+  /* ---------------course section */
+  .course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+  }
+ .course h1{
+    font-size: 36px;
+    font-weight: 600px;
+  }
+  .course p{
+    color: #777;
+  }
+  .course .row{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+    transition: .8s;
+  }
+  .course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+  }
+  @media screen and (max-width:700px) {
+    .row{
+        flex-direction: column;
+    }
+    .course-col{
+       margin-bottom: 30px;
+    }
+    
+  }
+  /* Video Time 39.53*/
